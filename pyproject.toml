@@ -1,19 +1,10 @@
 [project]
 name = "myapp"
 version = "0.1.0"
-description = "My test app"
-requires-python = ">=3.11"
+description = "Minimal reproducible setup"
+requires-python = ">=3.12,<3.13"
 
-[tool.uv]
-python-preference = "managed"
-
-[tool.uv.dependency-groups]
-default = [
-    "requests*",
-    "pandas*"
+dependencies = [
+    "requests>=2.31",
+    "numpy~=1.26",
 ]
-
-dev = [
-    "pytest*"
-]
-
