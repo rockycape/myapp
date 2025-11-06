@@ -5,16 +5,15 @@ description = "My test app"
 requires-python = ">=3.11"
 
 [tool.uv]
-# Optional general settings for UV
-python-preference = "stable"
+python-preference = "managed"
 
 [tool.uv.dependency-groups]
 default = [
-    "requests",
-    "pandas"
+    "requests*",
+    "pandas*"
 ]
 
 dev = [
-    "pytest"
+    "pytest*"
 ]
 
