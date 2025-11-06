@@ -1,0 +1,15 @@
+[project]
+name = "myapp"
+version = "0.1.0"
+description = "Example application"
+requires-python = ">=3.10"
+
+[tool.uv.dependencies]
+# Production dependencies go here
+requests = "*"
+
+[tool.uv.dev-dependencies]
+# Development-only dependencies go here
+pytest = "*"
+black = "*"
+
