@@ -1,4 +1,4 @@
-Himport re
+import re
 
 def remove_non_chars(text):
     # Capitalize the first letter of each word
